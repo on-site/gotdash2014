@@ -1,0 +1,41 @@
+<template name="layout">
+<body>
+  <div class="hero">
+    <h1>On-Site 2014</h1>
+    <h2>
+      February 27-28 2014
+      <span>The Water Tower Media Room</span>
+    </h2>
+    <div class="actions">
+      <a href="https://www.eventbrite.com/e/dashcon-registration-10462149571?ref=ebtnebregn" target="_blank" class="button radius transparent success">Register for DashCon</a>
+      <br>
+      <a href="https://www.surveymonkey.com/s/FF22MZM" class="button radius transparent success">Take the survey</a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="large-8 medium-12 small-12 large-centered columns">
+      <nav>
+        <a class="home" href="/">home</a>
+        <strong>•</strong>
+        <a href="/speakers">Speakers</a>
+        <strong>•</strong>
+        <a href="/schedule">Schedule</a>
+        <strong>•</strong>
+        <a href="https://www.on-site.com">On-Site</a>
+      </nav>
+    </div>
+  </div>
+  {{yield}}
+  <div class="sponsors">
+    <div class="row">
+      <div class="large-8 medium-12 small-12 large-centered medium-centered columns">
+        <h4>our sponsors</h4>
+        <a class="platinum" href="http://www.on-site.com/"><img src="/images/logo-onsite-medium.png" alt="onsite logo"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>Brought to you by <a class="onsite" href="http://on-site.com/">On-Site</a></h3>
+  </div>
+</body>
+</template>
