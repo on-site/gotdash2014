@@ -1,8 +1,9 @@
 Template.speakers.rendered = function () {
   if (Foundation) {
-    Foundation.set_namespace = function() {};
+    Foundation.global.namespace = '';
+    $(document).foundation("reveal");
+    //Foundation.set_namespace = function() {};
   }
-  $(document).foundation("reveal");
   $(document).on('closed', '[data-reveal]', function () {
     var modal = $(this);
     if (Session.get('name')) {
